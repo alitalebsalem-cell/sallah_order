@@ -116,22 +116,45 @@ Back To Store
 
 </div>
 
-<!-- INVOICE TEMPLATE -->
+<!-- =========================
+INVOICE TEMPLATE
+========================= -->
 
-<div
-id="invoiceTemplate"
+<div id="invoiceTemplate"
 style="
 position:fixed;
 left:-99999px;
 top:0;
-background:white;
-padding:30px;
 width:1200px;
+background:#fff;
+padding:30px;
 ">
 
 <div class="invoice-box">
 
-<div class="invoice-header">
+<!-- HEADER -->
+
+<div class="invoice-top">
+
+<div class="invoice-left">
+
+<h3>فاتورة</h3>
+
+<h2 id="invoiceNo">
+INV-0000
+</h2>
+
+<div class="invoice-date">
+
+📅
+
+<span id="invoiceDate"></span>
+
+</div>
+
+</div>
+
+<div class="invoice-center">
 
 <img
 src="images/logo.png"
@@ -139,104 +162,99 @@ class="invoice-logo">
 
 </div>
 
-<div class="invoice-info">
+<div class="invoice-right">
+
+<div class="customer-title">
+
+العميل
+
+</div>
+
+<div
+class="customer-name"
+id="invoiceCustomer">
+
+البيع المباشر
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<!-- PRODUCTS -->
+
+<div
+id="invoiceProducts"
+class="invoice-products">
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="invoice-footer">
+
+<div class="footer-box">
 
 <div>
 
-CUSTOMER
-
-<br>
-
-<strong id="invoiceCustomer">
-
-</strong>
+إجمالي الأصناف
 
 </div>
 
-<div>
-
-DATE
-
-<br>
-
-<strong id="invoiceDate">
-
-</strong>
-
-</div>
-
-<div>
-
-INV NO
-
-<br>
-
-<strong id="invoiceNo">
-
-</strong>
-
-</div>
-
-</div>
-
-<table id="invoiceTable">
-
-<thead>
-
-<tr>
-
-<th>
-
-Picture
-
-</th>
-
-<th>
-
-Code
-
-</th>
-
-<th>
-
-Description
-
-</th>
-
-<th>
-
-Qty
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody id="invoiceBody">
-
-</tbody>
-
-</table>
-
-<div class="invoice-total">
-
-Items
-
-<br>
-
-<span id="invoiceTotal">
+<h2 id="invoiceTotal">
 
 0
 
-</span>
+</h2>
+
+</div>
+
+<div class="footer-box notes">
+
+<div>
+
+ملاحظات
+
+</div>
+
+<div class="note-line">
+
+....................................
+
+</div>
+
+</div>
+
+<div class="footer-box">
+
+<div>
+
+إجمالي الكميات
+
+</div>
+
+<h2 id="invoiceQty">
+
+0
+
+</h2>
+
+</div>
+
+</div>
+
+<div class="invoice-thanks">
+
+شكراً لتعاملكم معنا ❤️
 
 </div>
 
 </div>
 
 </div>
-
 <script
 type="module"
 src="js/cart.js">
